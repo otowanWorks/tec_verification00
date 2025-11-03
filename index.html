@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Simple AI VTuber Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="vtuber">
+        <img id="charaImg" src="image/character001.png" alt="Character" />
+    </div>
+    
+    <div id="aiResponse" class="aiResponseBox">
+        <div class="ai-response" id="aiResponseUtterance">
+            こんにちは！何か話しかけてくださいね 😊
+        </div>
+    </div>
+    
+    <div class="bottomBox">
+        <div id="userComment"></div>
+        <div id="submit_form">
+            <input type="text" id="utterance" placeholder="メッセージを入力してください..." />
+            <button id="sendButton" onclick="onClickSend();">送信</button>
+            <button id="voiceButton" onclick="toggleVoiceInput();" title="音声入力">🎤</button>
+            <button id="copyButton" onclick="copyAIResponse();">コピー</button>
+            <button id="menuButton" onclick="toggleHamburgerMenu();" title="定型文メニュー">≡</button>
+            <div id="hamburgerMenu"></div>
+        </div>
+    </div>
+
+    <!-- 右下の切り替えボタン -->
+    <button id="toggleButton" onclick="toggleSubmitForm();" title="入力フォームの表示/非表示">💬</button>
+
+    <script src="js/voice_api.js"></script>
+    <script src="js/keyword.js"></script>
+    <script src="js/quick_reply.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

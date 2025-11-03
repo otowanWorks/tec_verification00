@@ -1,0 +1,26 @@
+{
+  "name": "doroido-chan-vtuber",
+  "version": "1.0.0",
+  "description": "AI VTuber Chat System with VOICEVOX and secure API key management",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required for static site'",
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "ai",
+    "vtuber",
+    "chat",
+    "mebo",
+    "voicevox",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
